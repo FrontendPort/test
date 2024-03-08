@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#319197">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 200px;
+      font-size: 46px;
+      font-variant-numeric: normal;
+    }
+    .container.active span {
+      font-variant-numeric: tabular-nums;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <span>$ 153,856</span>
+    <span>$ 9 49,1 0 2</span>
+    <span>$ 203,1111111</span>
+</div>
+
+<button onclick="addActive()" class="button">Change</button>
+
+  <!-- <script src="index.js"></script> -->
+  <script>
+    function addActive() {
+      document.querySelector(".container").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
